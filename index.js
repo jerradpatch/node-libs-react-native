@@ -1,4 +1,6 @@
-exports.assert						= require.resolve('assert/');
+const path = require("path");
+
+exports.assert						= path.resolve(__dirname, "node_modules", 'assert/');
 exports.buffer						= require.resolve('buffer/');
 exports.child_process				= null;
 exports.cluster						= null;
